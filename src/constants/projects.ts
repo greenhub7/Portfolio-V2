@@ -207,7 +207,7 @@ export const testimonials = [
     role: 'Product Manager',
     company: 'BlockTech',
     content: 'Exceptional blockchain development skills. Created a robust NFT marketplace that handles high transaction volumes seamlessly.',
-    avatar: '/public/Testinomial/7291ee92-f694-4852-2691-fb72f4a6948d.webp',
+    avatar: 'https://mediacfl.cofounderslab.com/user/profiles/2025/12/1766620714128_1766620714128-blob',
     rating: 5
   },
   {
