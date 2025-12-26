@@ -30,15 +30,15 @@ const ParticleBackground = () => {
     const createParticle = (x?: number, y?: number): Particle => ({
       x: x ?? Math.random() * canvas.width,
       y: y ?? Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 2,
-      vy: (Math.random() - 0.5) * 2,
+      vx: (Math.random() - 0.5) * 1.5,
+      vy: (Math.random() - 0.5) * 1.5,
       life: 0,
-      maxLife: Math.random() * 100 + 50
+      maxLife: Math.random() * 150 + 100
     });
 
     const initParticles = () => {
       particlesRef.current = [];
-      for (let i = 0; i < 100; i++) {
+      for (let i = 0; i < 60; i++) {
         particlesRef.current.push(createParticle());
       }
     };
@@ -46,20 +46,19 @@ const ParticleBackground = () => {
     const handleMouseMove = (e: MouseEvent) => {
       mouseRef.current = { x: e.clientX, y: e.clientY };
       
-      // Create particles near mouse
-      for (let i = 0; i < 3; i++) {
+      // Create fewer particles near mouse
+      if (Math.random() < 0.9) {
         particlesRef.current.push(
           createParticle(
-            e.clientX + (Math.random() - 0.5) * 100,
-            e.clientY + (Math.random() - 0.5) * 100
+            e.clientX + (Math.random() - 0.5) * 80,
+            e.clientY + (Math.random() - 0.5) * 80
           )
         );
       }
     };
 
     const animate = () => {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particlesRef.current = particlesRef.current.filter(particle => {
         // Update particle
@@ -72,9 +71,9 @@ const ParticleBackground = () => {
         const dy = mouseRef.current.y - particle.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         
-        if (distance < 100) {
-          particle.vx += dx * 0.0001;
-          particle.vy += dy * 0.0001;
+        if (distance < 160) {
+          particle.vx += dx * 0.00025;
+          particle.vy += dy * 0.00025;
         }
 
         // Boundary check
@@ -83,7 +82,7 @@ const ParticleBackground = () => {
 
         // Draw particle
         const alpha = 1 - (particle.life / particle.maxLife);
-        const size = Math.max(1, alpha * 3);
+        const size = Math.max(0.5, alpha * 3);
         
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, size, 0, Math.PI * 2);
@@ -98,12 +97,12 @@ const ParticleBackground = () => {
           const dy = particle.y - otherParticle.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
           
-          if (distance < 80) {
+          if (distance < 120) {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
-            ctx.strokeStyle = `rgba(139, 92, 246, ${(1 - distance / 80) * alpha * 0.3})`;
-            ctx.lineWidth = 1;
+            ctx.strokeStyle = `rgba(139, 92, 246, ${(1 - distance / 120) * alpha * 0.25})`;
+            ctx.lineWidth = 0.5;
             ctx.stroke();
           }
         });
@@ -112,7 +111,7 @@ const ParticleBackground = () => {
       });
 
       // Add new particles occasionally
-      if (Math.random() < 0.02) {
+      if (Math.random() < 0.015) {
         particlesRef.current.push(createParticle());
       }
 
@@ -136,11 +135,23 @@ const ParticleBackground = () => {
   }, []);
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-0"
-      style={{ background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)' }}
-    />
+    <>
+      <div 
+        className="fixed inset-0 z-0"
+        style={{ 
+          backgroundImage: 'url(/background.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
+      <div className="fixed inset-0 bg-black/5 z-0" />
+      
+      <canvas
+        ref={canvasRef}
+        className="fixed inset-0 pointer-events-none z-0"
+      />
+    </>
   );
 };
 

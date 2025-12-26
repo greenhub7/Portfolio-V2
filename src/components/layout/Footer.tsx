@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, Github, ExternalLink } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 
 // Custom Discord Icon Component
 const DiscordIcon = ({ size = 18, className = "" }: { size?: number; className?: string }) => (
@@ -43,21 +43,21 @@ const Footer = () => {
           {/* Brand section */}
           <div className="md:col-span-2">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent mb-4">
-              TAO-STAR
+              VexPro
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               United by innovation, I can push the boundaries of AI, Blockchain, and web development — building a smarter, more connected future, one line of code at a time.
             </p>
             <div className="flex gap-4">
               <a
-                href="mailto:isaiasmoney2@gmail.com?subject=To%20TAO-STAR&body=Hello%20TAO-STAR%2C%0A%0A..."
+                href="mailto:freeburner@gmail.com?subject=To%20VexPro&body=Hello%20TAO-STAR%2C%0A%0A..."
                 className="p-3 bg-gray-800 hover:bg-blue-600 text-gray-300 hover:text-white rounded-full transition-colors"
               >
                 <Mail size={18} />
               </a>
               
               <a
-                href="https://discord.com/users/bittensor1"
+                href="https://discord.com/users/tank_0765"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 hover:bg-indigo-600 text-gray-300 hover:text-white rounded-full transition-colors"
@@ -66,7 +66,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://t.me/smartman517"
+                href="https://t.me/Vex_Pro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 hover:bg-cyan-600 text-gray-300 hover:text-white rounded-full transition-colors"
@@ -75,16 +75,16 @@ const Footer = () => {
               </a>
               
               <a
-                href="https://www.linkedin.com/in/isaias-money-640056390/"
+                href="https://www.linkedin.com/in/logan-h-sao-960729352"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 hover:bg-blue-700 text-gray-300 hover:text-white rounded-full transition-colors"
               >
-                <ExternalLink size={18} />
+                <Linkedin size={18} />
               </a>
               
               <a
-                href="https://github.com/DEV-MAT1996"
+                href="https://github.com/greenhub7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 hover:bg-gray-600 text-gray-300 hover:text-white rounded-full transition-colors"
@@ -128,7 +128,7 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 text-sm">
-            © {currentYear} TAO-STAR. All rights reserved.
+            © {currentYear} All rights reserved | Designed by VexPro.
           </div>
           
           <div className="flex items-center gap-6 text-sm text-gray-400">

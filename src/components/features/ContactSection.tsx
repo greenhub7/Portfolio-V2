@@ -110,146 +110,145 @@ ${formData.message}
   return (
     <section id="contact" className="py-20 px-6 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-purple-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
       </div>
 
-      <div className="container mx-auto max-w-6xl relative z-10">
+      <div className="container mx-auto max-w-7xl relative z-10">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            You can contact TAO-STAR!
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-medium mb-6">
+            <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+            Let's Work Together
+          </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400">
+              Get In Touch
+            </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Ready to transform your ideas into reality? Let's discuss your next project and create innovative solutions with TAO-STAR.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Ready to transform your ideas into reality? Let's discuss your next project and create something extraordinary together.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
           {/* Contact info */}
           <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold text-white mb-6">Get in Touch</h3>
-              <p className="text-gray-400 leading-relaxed mb-8">
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                  <Mail className="text-white" size={18} />
+                </div>
+                Let's Connect
+              </h3>
+              <p className="text-gray-300 leading-relaxed mb-8">
                 Whether you need full-stack applications, AI solutions, blockchain development, or chatbot integration, 
                 I'm here to help bring your vision to life with cutting-edge technology and exceptional craftsmanship.
               </p>
+
+              {/* Quick stats */}
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className="text-center p-4 bg-gradient-to-r from-blue-900/20 to-cyan-900/20 backdrop-blur-sm rounded-xl border border-blue-500/20">
+                  <div className="text-2xl font-bold text-white mb-1">&lt; 24h</div>
+                  <div className="text-sm text-gray-400">Response Time</div>
+                </div>
+                <div className="text-center p-4 bg-gradient-to-r from-green-900/20 to-emerald-900/20 backdrop-blur-sm rounded-xl border border-green-500/20">
+                  <div className="text-2xl font-bold text-white mb-1">100%</div>
+                  <div className="text-sm text-gray-400">Project Success</div>
+                </div>
+              </div>
             </div>
 
             {/* Contact methods */}
-            <div className="space-y-6">
-              <div className="group p-4 bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300">
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="p-3 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full group-hover:scale-110 transition-transform">
+            <div className="space-y-4">
+              <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-blue-500/30 transition-all duration-300">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <Mail className="text-white" size={20} />
                   </div>
-                  <div>
-                    <div className="font-semibold text-white group-hover:text-blue-400 transition-colors">
+                  <div className="flex-1">
+                    <div className="font-semibold text-white group-hover:text-blue-400 transition-colors mb-1">
                       Email
                     </div>
-                    <div className="text-gray-400 text-sm">Choose preferred email</div>
+                    <a
+                      href="mailto:freeburner80@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Vex%20Pro%2C%0A%0A..."
+                      className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
+                    >
+                      freeburner80@gmail.com
+                    </a>
                   </div>
-                </div>
-                <div className="ml-16 space-y-2">
-                  <a
-                    href="mailto:isaiasmoney2@gmail.com?subject=To%20TAO-STAR&body=Hello%20TAO-STAR%2C%0A%0A..."
-                    className="block text-blue-400 hover:text-blue-300 text-sm transition-colors"
-                  >
-                    isaiasmoney2@gmail.com
-                  </a>
-                  <a
-                    href="mailto:expencive425@outlook.com?subject=To%20TAO-STAR&body=Hello%20TAO-STAR%2C%0A%0A..."
-                    className="block text-blue-400 hover:text-blue-300 text-sm transition-colors"
-                  >
-                    expencive425@outlook.com
-                  </a>
                 </div>
               </div>
 
               <a
-                href="https://discord.com/users/bittensor1"
+                href="https://discord.com/users/tank_0765"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 p-4 bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 hover:border-indigo-500/50 transition-all duration-300"
+                className="group block bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-indigo-500/30 transition-all duration-300"
               >
-                <div className="p-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full group-hover:scale-110 transition-transform">
-                  <DiscordIcon size={20} className="text-white" />
-                </div>
-                <div>
-                  <div className="font-semibold text-white group-hover:text-indigo-400 transition-colors">
-                    Discord
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <DiscordIcon size={20} className="text-white" />
                   </div>
-                  <div className="text-gray-400 text-sm">bittensor1</div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-white group-hover:text-indigo-400 transition-colors mb-1">
+                      Discord
+                    </div>
+                    <div className="text-indigo-400 text-sm">Vex_Pro</div>
+                  </div>
                 </div>
               </a>
 
-              <div className="group p-4 bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 hover:border-cyan-500/50 transition-all duration-300">
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="p-3 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full group-hover:scale-110 transition-transform">
+              <a
+                href="https://t.me/Vex_Pro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-cyan-500/30 transition-all duration-300"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <TelegramIcon size={20} className="text-white" />
                   </div>
-                  <div>
-                    <div className="font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                  <div className="flex-1">
+                    <div className="font-semibold text-white group-hover:text-cyan-400 transition-colors mb-1">
                       Telegram
                     </div>
-                    <div className="text-gray-400 text-sm">Multiple accounts available</div>
+                    <div className="text-cyan-400 text-sm">@Vex_Pro</div>
                   </div>
-                </div>
-                <div className="ml-16 space-y-2">
-                  <a
-                    href="https://t.me/smartman517"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-cyan-400 hover:text-cyan-300 text-sm transition-colors"
-                  >
-                    @smartman517
-                  </a>
-                  <a
-                    href="https://t.me/YC0112_425_517"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-cyan-400 hover:text-cyan-300 text-sm transition-colors"
-                  >
-                    @YC0112_425_517
-                  </a>
-                </div>
-              </div>
-
-              <a
-                href="https://www.linkedin.com/in/isaias-money-640056390/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-4 p-4 bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 hover:border-blue-600/50 transition-all duration-300"
-              >
-                <div className="p-3 bg-gradient-to-r from-blue-700 to-blue-600 rounded-full group-hover:scale-110 transition-transform">
-                  <LinkedInIcon size={20} className="text-white" />
-                </div>
-                <div>
-                  <div className="font-semibold text-white group-hover:text-blue-400 transition-colors">
-                    LinkedIn
-                  </div>
-                  <div className="text-gray-400 text-sm">Professional Network</div>
                 </div>
               </a>
-            </div>
 
-            {/* Quick stats */}
-            <div className="grid grid-cols-2 gap-4 pt-8">
-              <div className="text-center p-4 bg-gradient-to-r from-blue-900/20 to-cyan-900/20 backdrop-blur-sm rounded-xl border border-blue-500/20">
-                <div className="text-2xl font-bold text-white mb-1">&lt; 24h</div>
-                <div className="text-sm text-gray-400">Response Time</div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-r from-green-900/20 to-emerald-900/20 backdrop-blur-sm rounded-xl border border-green-500/20">
-                <div className="text-2xl font-bold text-white mb-1">100%</div>
-                <div className="text-sm text-gray-400">Project Success</div>
-              </div>
+              <a
+                href="https://www.linkedin.com/in/logan-h-sao-960729352/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-blue-600/30 transition-all duration-300"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <LinkedInIcon size={20} className="text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-white group-hover:text-blue-400 transition-colors mb-1">
+                      LinkedIn
+                    </div>
+                    <div className="text-blue-400 text-sm">Professional Network</div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
 
           {/* Contact form */}
-          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
-            <h3 className="text-xl font-semibold text-white mb-6">Send a Message</h3>
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                <Send className="text-white" size={18} />
+              </div>
+              <h3 className="text-2xl font-bold text-white">Send a Message</h3>
+            </div>
             
             <form 
               onSubmit={handleSubmit} 
@@ -270,9 +269,10 @@ ${formData.message}
               </div>
               {/* Send to email field for Netlify */}
               <input type="hidden" name="send-to" value={selectedEmail} />
-              <div className="grid grid-cols-1 gap-4">
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-3">
                     Your Name
                   </label>
                   <input
@@ -282,13 +282,13 @@ ${formData.message}
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-800/70 border border-gray-600/50 rounded-lg text-white placeholder-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
+                    className="w-full px-4 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl text-white placeholder-gray-400 focus:border-blue-500/50 focus:bg-white/10 focus:outline-none transition-all duration-300"
                     placeholder="Enter your full name"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-3">
                     Your Email Address
                   </label>
                   <input
@@ -298,29 +298,14 @@ ${formData.message}
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-800/70 border border-gray-600/50 rounded-lg text-white placeholder-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
+                    className="w-full px-4 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl text-white placeholder-gray-400 focus:border-blue-500/50 focus:bg-white/10 focus:outline-none transition-all duration-300"
                     placeholder="your.email@example.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="sendTo" className="block text-sm font-medium text-gray-300 mb-2">
-                  Send to TAO-STAR Email
-                </label>
-                <select
-                  id="sendTo"
-                  value={selectedEmail}
-                  onChange={(e) => setSelectedEmail(e.target.value)}
-                  className="w-full px-4 py-3 bg-gray-800/70 border border-gray-600/50 rounded-lg text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
-                >
-                  <option value="isaiasmoney2@gmail.com">isaiasmoney2@gmail.com</option>
-                  <option value="expencive425@outlook.com">expencive425@outlook.com</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-3">
                   Subject
                 </label>
                 <input
@@ -330,13 +315,13 @@ ${formData.message}
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-800/70 border border-gray-600/50 rounded-lg text-white placeholder-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
+                  className="w-full px-4 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl text-white placeholder-gray-400 focus:border-blue-500/50 focus:bg-white/10 focus:outline-none transition-all duration-300"
                   placeholder="e.g., Web Development Project, AI Integration, etc."
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-3">
                   Message
                 </label>
                 <textarea
@@ -345,8 +330,8 @@ ${formData.message}
                   value={formData.message}
                   onChange={handleInputChange}
                   required
-                  rows={5}
-                  className="w-full px-4 py-3 bg-gray-800/70 border border-gray-600/50 rounded-lg text-white placeholder-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors resize-none"
+                  rows={6}
+                  className="w-full px-4 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl text-white placeholder-gray-400 focus:border-blue-500/50 focus:bg-white/10 focus:outline-none transition-all duration-300 resize-none"
                   placeholder="Describe your project requirements, timeline, budget, and any specific technologies you'd like to use..."
                 />
               </div>
@@ -354,16 +339,16 @@ ${formData.message}
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transform hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-50 disabled:transform-none"
+                className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/25 transform hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:transform-none disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                    Sending...
+                    Sending Message...
                   </>
                 ) : (
                   <>
-                    <Send size={18} />
+                    <Send size={20} />
                     Send Message
                   </>
                 )}
@@ -371,14 +356,14 @@ ${formData.message}
 
               {/* Status messages */}
               {submitStatus === 'success' && (
-                <div className="flex items-center gap-2 p-4 bg-green-900/20 border border-green-500/30 rounded-lg text-green-400">
+                <div className="flex items-center gap-3 p-4 bg-green-500/10 border border-green-500/20 rounded-xl text-green-400">
                   <CheckCircle size={20} />
-                  <span>Message sent successfully! We'll get back to you soon.</span>
+                  <span>Message sent successfully! I'll get back to you soon.</span>
                 </div>
               )}
 
               {submitStatus === 'error' && (
-                <div className="flex items-center gap-2 p-4 bg-red-900/20 border border-red-500/30 rounded-lg text-red-400">
+                <div className="flex items-center gap-3 p-4 bg-red-500/10 border border-red-500/20 rounded-xl text-red-400">
                   <AlertCircle size={20} />
                   <span>Something went wrong. Please try again or contact me directly.</span>
                 </div>
@@ -387,31 +372,38 @@ ${formData.message}
           </div>
         </div>
 
-        {/* Map and Location Section - Full Width */}
-        <div className="mt-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-semibold text-white mb-4 flex items-center justify-center gap-3">
-              <MapPin className="text-blue-400" size={28} />
-              Location & Availability
-            </h3>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+        {/* Map and Location Section */}
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
+          <div className="text-center mb-8">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center">
+                <MapPin className="text-white" size={18} />
+              </div>
+              <h3 className="text-2xl font-bold text-white">
+                Location & Availability
+              </h3>
+            </div>
+            <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Available for remote work worldwide. I collaborate with clients across different time zones to deliver exceptional results.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Interactive Map */}
             <div className="lg:col-span-2 relative">
-              <div className="w-full h-96 min-h-[400px] relative">
+              <div className="w-full h-80 min-h-[320px] relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden">
                 <MapBox className="h-full w-full" />
               </div>
             </div>
 
             {/* Location info */}
-            <div className="space-y-6">
-              <div className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50">
-                <h4 className="text-lg font-semibold text-white mb-4">Work Preferences</h4>
-                <div className="space-y-3 text-sm">
+            <div className="space-y-4">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-all duration-300">
+                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  Work Preferences
+                </h4>
+                <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                     <span className="text-gray-300">Remote Work Available</span>
@@ -428,22 +420,32 @@ ${formData.message}
               </div>
 
               {/* Time zones */}
-              <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20">
-                <h4 className="text-lg font-semibold text-white mb-4">Working Hours</h4>
-                <div className="grid grid-cols-1 gap-3 text-sm">
-                  <div className="flex justify-between">
+              <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 backdrop-blur-sm rounded-xl p-5 border border-blue-500/20">
+                <h4 className="text-lg font-semibold text-white mb-3">Working Hours</h4>
+                <div className="grid grid-cols-1 gap-2 text-sm">
+                  <div className="flex justify-between items-center">
                     <span className="text-gray-300">EST (UTC-5)</span>
-                    <span className="text-blue-400">9 AM - 6 PM</span>
+                    <span className="text-blue-400 font-medium">9 AM - 6 PM</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center">
                     <span className="text-gray-300">GMT (UTC+0)</span>
-                    <span className="text-blue-400">2 PM - 11 PM</span>
+                    <span className="text-blue-400 font-medium">2 PM - 11 PM</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center">
                     <span className="text-gray-300">JST (UTC+9)</span>
-                    <span className="text-blue-400">11 PM - 8 AM</span>
+                    <span className="text-blue-400 font-medium">11 PM - 8 AM</span>
                   </div>
                 </div>
+              </div>
+
+              {/* Availability status */}
+              <div className="bg-gradient-to-r from-green-900/20 to-emerald-900/20 backdrop-blur-sm rounded-xl p-5 border border-green-500/20">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                  <h4 className="text-lg font-semibold text-white">Current Status</h4>
+                </div>
+                <p className="text-green-400 font-medium text-sm">Available for new projects</p>
+                <p className="text-gray-300 text-xs mt-1">Accepting clients for Q1 2026</p>
               </div>
             </div>
           </div>

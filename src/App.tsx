@@ -21,6 +21,11 @@ function App() {
         to { opacity: 1; transform: translateY(0); }
       }
       
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
       @keyframes slideUp {
         from { opacity: 0; transform: translateY(30px); }
         to { opacity: 1; transform: translateY(0); }
@@ -35,13 +40,49 @@ function App() {
         0% { transform: translateX(-100%); }
         100% { transform: translateX(200%); }
       }
+
+      @keyframes spin-slow {
+        from { transform: rotateY(0deg); }
+        to { transform: rotateY(360deg); }
+      }
+
+      @keyframes gradientShift {
+        0%, 100% { 
+          background-position: 0% 50%; 
+        }
+        50% { 
+          background-position: 100% 50%; 
+        }
+      }
+
+      @keyframes subtleFloat {
+        0%, 100% { 
+          transform: translateY(0px); 
+        }
+        50% { 
+          transform: translateY(-3px); 
+        }
+      }
+
+      @keyframes textGlow {
+        0%, 100% { 
+          text-shadow: 0 0 10px rgba(59, 130, 246, 0.3),
+                       0 0 20px rgba(139, 92, 246, 0.2),
+                       0 0 30px rgba(6, 182, 212, 0.1);
+        }
+        50% { 
+          text-shadow: 0 0 15px rgba(59, 130, 246, 0.5),
+                       0 0 30px rgba(139, 92, 246, 0.3),
+                       0 0 45px rgba(6, 182, 212, 0.2);
+        }
+      }
       
       .animate-fade-in {
         animation: fadeIn 0.8s ease-out forwards;
       }
       
       .animate-fade-in-up {
-        animation: fadeIn 1s ease-out 0.3s forwards;
+        animation: fadeInUp 0.8s ease-out forwards;
         opacity: 0;
       }
       
@@ -57,6 +98,41 @@ function App() {
       .animate-shimmer {
         animation: shimmer 2s infinite;
       }
+
+      .animate-spin-slow {
+        animation: spin-slow 8s linear infinite;
+      }
+
+      .animate-gradient-shift {
+        background-size: 200% 200%;
+        animation: gradientShift 4s ease-in-out infinite;
+      }
+
+      .animate-subtle-float {
+        animation: subtleFloat 3s ease-in-out infinite;
+      }
+
+      .animate-text-glow {
+        animation: textGlow 3s ease-in-out infinite;
+      }
+
+      .featured-projects-title {
+        background: linear-gradient(
+          45deg,
+          #3b82f6 0%,
+          #8b5cf6 25%,
+          #06b6d4 50%,
+          #3b82f6 75%,
+          #8b5cf6 100%
+        );
+        background-size: 200% 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: gradientShift 4s ease-in-out infinite, 
+                   subtleFloat 3s ease-in-out infinite,
+                   textGlow 3s ease-in-out infinite;
+      }
       
       .line-clamp-2 {
         display: -webkit-box;
@@ -70,6 +146,18 @@ function App() {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+      }
+
+      /* Accessibility - Reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .animate-fade-in-up,
+        .animate-fade-in,
+        .animate-slide-up,
+        .animate-float,
+        .animate-shimmer,
+        .animate-spin-slow {
+          animation: none !important;
+        }
       }
     `;
     document.head.appendChild(style);

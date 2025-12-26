@@ -20,7 +20,7 @@ export const projects: Project[] = [
       'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop&auto=format'
     ],
     featured: true,
-    githubUrl: ''
+    githubUrl: 'https://github.com/greenhub7/Intervue-AI-Project'
   },
   {
     id: 'fn7-io',
@@ -50,10 +50,9 @@ export const projects: Project[] = [
     shortDescription: 'AI-powered technical interview platform',
     technologies: ['React', 'TypeScript', 'OpenAI API', 'WebRTC', 'MongoDB'],
     liveUrl: 'https://intervueai-io.vercel.app/',
-    githubUrl: 'https://github.com/maxcointech0000/AI-IntervueAI',
+    githubUrl: 'https://github.com/greenhub7/Intervue-AI-Project',
     userCount: '15,000+',
     images: [
-      'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop&auto=format',
@@ -116,11 +115,11 @@ export const projects: Project[] = [
     liveUrl: 'https://ai-shifu.com/',
     githubUrl: 'https://github.com/maxcointech0000/CHATBOT-AI_Shifu',
     userCount: '50,000+',
-    images: [
-      'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop&auto=format',
+    images: [      
       'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop&auto=format'
     ],
@@ -195,29 +194,29 @@ export const projects: Project[] = [
 export const testimonials = [
   {
     id: '1',
-    name: 'Sarah Johnson',
+    name: 'Guelsen Uysal',
     role: 'CTO',
     company: 'TechCorp',
     content: 'Outstanding work on our AI platform. Delivered beyond expectations with clean, scalable code and innovative solutions.',
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&auto=format&crop=face',
+    avatar: '/public/Testinomial/1766748723272_1766748723272-blob.webp',
     rating: 5
   },
   {
     id: '2', 
-    name: 'Michael Chen',
+    name: 'Dallion Mcgregor',
     role: 'Product Manager',
     company: 'BlockTech',
     content: 'Exceptional blockchain development skills. Created a robust NFT marketplace that handles high transaction volumes seamlessly.',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
+    avatar: '/public/Testinomial/7291ee92-f694-4852-2691-fb72f4a6948d.webp',
     rating: 5
   },
   {
     id: '3',
-    name: 'Emily Rodriguez',
+    name: 'Joana Marku',
     role: 'Startup Founder',
     company: 'InnovateLab',
     content: 'Transformed our chatbot concept into reality with advanced NLP capabilities. User engagement increased by 300%.',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
+    avatar: '/public/Testinomial/7291ee92-f694-4852-8491-fb72f4a6948d.webp',
     rating: 5
   }
 ];
