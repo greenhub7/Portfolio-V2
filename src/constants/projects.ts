@@ -194,11 +194,11 @@ export const projects: Project[] = [
 export const testimonials = [
   {
     id: '1',
-    name: 'Guelsen Uysal',
+    name: 'Thiviya Raveendran',
     role: 'CTO',
     company: 'TechCorp',
     content: 'Outstanding work on our AI platform. Delivered beyond expectations with clean, scalable code and innovative solutions.',
-    avatar: '/public/Testinomial/1766748723272_1766748723272-blob.webp',
+    avatar: 'https://cofounderslab.com/_next/image?url=https%3A%2F%2Fmediacfl.cofounderslab.com%2Fuser%2Fprofiles%2F2025%2F12%2F1764888834981_1764888834981-blob&w=1920&q=75',
     rating: 5
   },
   {
