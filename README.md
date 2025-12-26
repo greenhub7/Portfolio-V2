@@ -1,4 +1,4 @@
-# TAO-STAR Portfolio
+#Modern and Professional Portfolio
 
 A stunning, cinematic portfolio website showcasing 7+ years of expertise in AI, Blockchain, Full Stack Development, Chatbots, and Mobile Applications.
 
@@ -260,15 +260,13 @@ Feel free to fork this project and customize it for your own portfolio. If you c
 Ready to collaborate? Get in touch through any of the following channels:
 
 ### 📧 Email
-- **Primary**: [isaiasmoney2@gmail.com](mailto:isaiasmoney2@gmail.com?subject=To%20TAO-STAR&body=Hello%20TAO-STAR%2C%0A%0A)
-- **Secondary**: [expencive425@outlook.com](mailto:expencive425@outlook.com?subject=To%20TAO-STAR&body=Hello%20TAO-STAR%2C%0A%0A)
+- [freeburner80@gmail.com](mailto:freeburner80@gmail.com?subject=To%20TAO-STAR&body=Hello%20VexPro%2C%0A%0A)
 
 ### 🌐 Social Media & Messaging
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/isaias-money-640056390)
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/DEV-MAT1996)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/users/bittensor1)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/smartman517)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/YC0112_425_517)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/logan-h-sao-960729352/)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/greenhub7)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/users/tank_0765)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/Vex_Pro)
 
 ### 💼 Professional Inquiries
 For business inquiries, project collaborations, or technical consultations, please use the primary email address or connect via LinkedIn for the fastest response.
@@ -276,4 +274,4 @@ For business inquiries, project collaborations, or technical consultations, plea
 
 ---
 
-Built with ❤️ by TAO-STAR
+Built with ❤️ by Vex_Pro
