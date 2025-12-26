@@ -216,7 +216,7 @@ export const testimonials = [
     role: 'Startup Founder',
     company: 'InnovateLab',
     content: 'Transformed our chatbot concept into reality with advanced NLP capabilities. User engagement increased by 300%.',
-    avatar: '/public/Testinomial/7291ee92-f694-4852-8491-fb72f4a6948d.webp',
+    avatar: 'https://cofounderslab.com/_next/image?url=https%3A%2F%2Fmediacfl.cofounderslab.com%2Fuser%2Fprofiles%2F2025%2F11%2F1764032564718_1764032564718-blob&w=1920&q=75',
     rating: 5
   }
 ];
