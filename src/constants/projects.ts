@@ -194,7 +194,7 @@ export const projects: Project[] = [
 export const testimonials = [
   {
     id: '1',
-    name: 'Thiviya Raveendran',
+    name: 'Thiviyo Raveendran',
     role: 'CTO',
     company: 'TechCorp',
     content: 'Outstanding work on our AI platform. Delivered beyond expectations with clean, scalable code and innovative solutions.',
