@@ -71,7 +71,7 @@ export const projects: Project[] = [
     shortDescription: 'Decentralized NFT marketplace for digital art',
     technologies: ['Solidity', 'Web3.js', 'React', 'IPFS', 'Ethereum'],
     liveUrl: 'https://blockstellart.com/',
-    githubUrl: 'https://github.com/maxcointech0000/blockstellart',
+    githubUrl: 'https://github.com/greenhub7/blockstellart',
     userCount: '25,000+',
     images: [
       'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop&auto=format',
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     shortDescription: 'Complete NFT marketplace with minting and auctions',
     technologies: ['Solidity', 'Next.js', 'Ethers.js', 'Hardhat', 'Polygon'],
     liveUrl: 'https://devpavan04.github.io/cryptoboys-nft-marketplace/',
-    githubUrl: 'https://github.com/maxcointech0000/BLOCKCHAIN-Cryptoboys_NFT_Marketplace',
+    githubUrl: 'https://github.com/greenhub7/blockchain-cryptoboys-NFT',
     userCount: '8,000+',
     images: [
       'https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=600&fit=crop&auto=format',
@@ -113,7 +113,7 @@ export const projects: Project[] = [
     shortDescription: 'Enterprise conversational AI assistant',
     technologies: ['Python', 'NLP', 'React', 'WebSocket', 'PostgreSQL'],
     liveUrl: 'https://ai-shifu.com/',
-    githubUrl: 'https://github.com/maxcointech0000/CHATBOT-AI_Shifu',
+    githubUrl: 'https://github.com/greenhub7/Wanderlust--MERN',
     userCount: '50,000+',
     images: [      
       'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop&auto=format',
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     shortDescription: 'Photo blending and enhancement mobile app',
     technologies: ['React Native', 'TypeScript', 'Firebase', 'ML Kit', 'Redux'],
     liveUrl: 'https://blendy-download.vercel.app/',
-    githubUrl: 'https://github.com/maxcointech0000/APP-Blendy',
+    githubUrl: 'https://github.com/greenhub7/app-blendy',
     userCount: '100,000+',
     images: [
       'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&auto=format',
@@ -157,7 +157,7 @@ export const projects: Project[] = [
     shortDescription: 'Complete travel booking and review platform',
     technologies: ['MERN', 'Stripe', 'Socket.io', 'Redis', 'AWS S3'],
     liveUrl: 'https://wanderlust-beta.vercel.app/',
-    githubUrl: 'https://github.com/maxcointech0000/MERN-Wanderlust',
+    githubUrl: 'https://github.com/greenhub7/Wanderlust--MERN',
     userCount: '75,000+',
     images: [
       'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop&auto=format',
@@ -177,7 +177,7 @@ export const projects: Project[] = [
     shortDescription: 'Video streaming platform with recommendations',
     technologies: ['React', 'Node.js', 'MongoDB', 'JWT', 'Cloudinary'],
     liveUrl: 'https://watchit-1.onrender.com/',
-    githubUrl: 'https://github.com/maxcointech0000/MERN-WATCHit',
+    githubUrl: 'https://github.com/greenhub7/MERN-WATCHit',
     userCount: '30,000+',
     images: [
       'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop&auto=format',
