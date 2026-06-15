@@ -263,10 +263,10 @@ Ready to collaborate? Get in touch through any of the following channels:
 - [freeburner80@gmail.com](mailto:freeburner80@gmail.com?subject=To%20TAO-STAR&body=Hello%20VexPro%2C%0A%0A)
 
 ### 🌐 Social Media & Messaging
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/logan-h-sao-960729352/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vex-h-pro-960729352/)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/greenhub7)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/users/tank_0765)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/Vex_Pro)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/alemo01)
 
 ### 💼 Professional Inquiries
 For business inquiries, project collaborations, or technical consultations, please use the primary email address or connect via LinkedIn for the fastest response.

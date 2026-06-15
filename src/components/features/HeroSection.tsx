@@ -44,7 +44,7 @@ const HeroSection = () => {
   const socialLinks = [
     { name: 'Email', icon: Mail, url: 'mailto:freeburner80@gmail.com', color: 'hover:text-blue-400' },
     { name: 'GitHub', icon: Github, url: 'https://github.com/greenhub7', color: 'hover:text-gray-300' },
-    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/logan-h-sao-960729352/', color: 'hover:text-blue-500' }
+    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/vex-h-pro-960729352/', color: 'hover:text-blue-500' }
   ];
 
   const metrics = [
